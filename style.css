@@ -1,0 +1,140 @@
+/* Estilos generales de la página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.encabezado {
+    background: linear-gradient(135deg, #174ea6, #2878d0);
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+.encabezado p {
+    margin: 0;
+    color: #e5efff;
+}
+
+.contenedor {
+    width: min(1100px, 92%);
+    margin: 28px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.tarjeta h2 {
+    margin: 0 0 18px;
+    color: #174ea6;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2878d0;
+    box-shadow: 0 0 0 3px rgba(40, 120, 208, 0.13);
+}
+
+.campos {
+    display: grid;
+    gap: 10px;
+}
+
+.tres-columnas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dos-columnas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background: #1765bd;
+    color: white;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #104d94;
+    transform: translateY(-1px);
+}
+
+.resultado {
+    min-height: 44px;
+    margin: 16px 0 0;
+    padding: 12px;
+    border-radius: 8px;
+    background: #eff6ff;
+    color: #174078;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 430px) {
+    .tres-columnas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .dos-columnas {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .encabezado h1 {
+        font-size: 1.55rem;
+    }
+
+    .tarjeta {
+        padding: 19px;
+    }
+}

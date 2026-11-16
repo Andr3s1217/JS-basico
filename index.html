@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 8 - Andres Arroyaves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Laboratorio 8</h1>
+        <p>Andres Arroyaves 8-1045-216</p>
+    </header>
+
+    <main class="contenedor">
+        <!-- Ejercicio 1: suma de tres valores -->
+        <section class="tarjeta">
+            <h2>1. Suma de tres valores</h2>
+            <div class="campos tres-columnas">
+                <input type="number" id="suma1" placeholder="Primer número" step="any">
+                <input type="number" id="suma2" placeholder="Segundo número" step="any">
+                <input type="number" id="suma3" placeholder="Tercer número" step="any">
+            </div>
+            <button type="button" onclick="sumarTres()">Calcular suma</button>
+            <p class="resultado" id="resultadoSuma" aria-live="polite">Aquí aparecerá el resultado.</p>
+        </section>
+
+        <!-- Ejercicio 2: cuadrado de un número -->
+        <section class="tarjeta">
+            <h2>2. Cuadrado de un número</h2>
+            <input type="number" id="numeroCuadrado" placeholder="Escribe un número" step="any">
+            <button type="button" onclick="calcularCuadrado()">Calcular cuadrado</button>
+            <p class="resultado" id="resultadoCuadrado" aria-live="polite">Aquí aparecerá el resultado.</p>
+        </section>
+
+        <!-- Ejercicio 3: promedio de tres calificaciones -->
+        <section class="tarjeta">
+            <h2>3. Promedio de calificaciones</h2>
+            <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+            <div class="campos tres-columnas">
+                <input type="number" id="nota1" placeholder="Calificación 1" min="0" max="100" step="any">
+                <input type="number" id="nota2" placeholder="Calificación 2" min="0" max="100" step="any">
+                <input type="number" id="nota3" placeholder="Calificación 3" min="0" max="100" step="any">
+            </div>
+            <button type="button" onclick="calcularPromedio()">Calcular promedio</button>
+            <p class="resultado" id="resultadoPromedio" aria-live="polite">Aquí aparecerá el resultado.</p>
+        </section>
+
+        <!-- Ejercicio 4: conversión de metros -->
+        <section class="tarjeta">
+            <h2>4. Conversión de unidades (metros)</h2>
+            <input type="number" id="metros" placeholder="Cantidad en metros" min="0" step="any">
+            <button type="button" onclick="convertirMetros()">Convertir unidades</button>
+            <p class="resultado" id="resultadoMetros" aria-live="polite">Aquí aparecerá el resultado.</p>
+        </section>
+
+        <!-- Ejercicio 5: comparación de dos valores -->
+        <section class="tarjeta">
+            <h2>5. Comparación de dos valores</h2>
+            <div class="campos dos-columnas">
+                <input type="number" id="valor1" placeholder="Primer número" step="any">
+                <input type="number" id="valor2" placeholder="Segundo número" step="any">
+            </div>
+            <button type="button" onclick="compararValores()">Comparar valores</button>
+            <p class="resultado" id="resultadoComparacion" aria-live="polite">Aquí aparecerá el resultado.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Práctica de HTML, CSS y JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
